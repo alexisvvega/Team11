@@ -1,0 +1,181 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: #e4f0f9;
+    padding-top: 50px; /* Ensures the body content doesn't get cut off at the top */
+    flex-direction: column;
+}
+
+#game-title {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #e4f0f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Keeps title above other elements */
+    position: relative;
+    margin-bottom: 20px; /* Prevents it from being too close to the game */
+}
+
+#title-image {
+    max-height: 150px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#sub-title {
+    margin-top: 5px; /* Adds spacing between the title and subtitle */
+}
+
+#subtitle-image {
+    max-height: 70px; /* Adjust as needed */
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* New container for side-by-side layout */
+#content-container {
+    display: flex;
+    justify-content: space-between; /* Aligns items side by side */
+    width: 80%; /* Set width to allow some margin space */
+    max-width: 1200px; /* Max width for the content */
+    margin: 20px auto; /* Centers content horizontally */
+    padding: 20px 0;
+}
+
+#game {
+    position: relative;
+    width: 45%; /* Ensures the game takes up 45% of the space */
+    height: 400px;
+    background-color: #afd5f0;
+    overflow: hidden;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#scoreboard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+#mario {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('MarioGameAssets/marioretro.png'); /* Use the Mario image */
+    background-size: cover; /* Ensures the image fits the element */
+    background-position: center; /* Centers the image */
+    bottom: 40px; /* Make sure Mario stands above the grass */
+}
+
+.coin {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('MarioGameAssets/coinretro.png'); /* Use the coin image */
+    background-size: cover;
+    background-position: center;
+}
+
+.cursed-coin {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('MarioGameAssets/bombretro.png'); /* Use the fireball image */
+    background-size: cover;
+    background-position: center;
+}
+
+
+.grass {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: green; /* Grass color */
+    bottom: 0;
+    left: 0;
+}
+
+/* Button styles */
+.button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Start button centered in the game */
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hide control buttons until game starts */
+#controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Game description section */
+#game-description {
+    width: 45%; /* Ensures description takes up 45% of the space */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+#game-description h2 {
+    text-align: center;
+    color: #000;
+}
+
+#game-description p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+#back-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Add padding for a better look */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+#back-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
