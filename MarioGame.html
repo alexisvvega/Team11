@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Coin Collection Game</title>
+    <link rel="stylesheet" href="MarioGame.css">
+</head>
+<body>
+    <button id="back-button" onclick="goBack()">&#8592; Back</button>
+    <div id="game-title">
+        <img src="MarioGameAssets/marioCoinfall.png" alt="Mario Coinfall" id="title-image">
+        <div id="sub-title">
+            <img src="MarioGameAssets/helpMarioCollect.png" alt="Help Mario Collect His Coins!" id="subtitle-image">
+        </div>
+    </div>
+    
+    <!-- Main container for game and description -->
+    <div id="content-container">
+        <div id="game">
+            <div id="scoreboard">Score: 0</div>
+            <div id="mario"></div>
+            <div class="grass"></div> 
+            <button id="startButton" class="button">Start</button>
+            <div id="controls" class="hidden">
+                <button id="pauseButton" class="button">Pause</button>
+                <button id="restartButton" class="button">Restart</button>
+            </div>
+        </div>
+
+        <div id="game-description">
+            <h2>How to Play:</h2>
+            <p>Use the left and right arrow keys to move Mario across the screen.</p>
+            <p>Collect the yellow coins that fall from the sky to earn points.</p>
+            <p>Avoid the bomb, as they will deduct 20 points from your score if collected.</p>
+            <p>Click the "Start" button to begin the game, and use the pause and resume buttons to control the game while playing.</p>
+            <p>Good luck!</p>
+        </div>
+    </div>
+
+    <script src="MarioGame.js"></script>
+</body>
+</html>
