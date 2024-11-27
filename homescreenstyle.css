@@ -1,0 +1,130 @@
+/* General Reset */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(to bottom, #b6dbf2, #38a364); /* Sky to grass-like gradient */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Make sure content starts at the top */
+    height: 100vh;
+    margin: 0;
+    padding-top: 100px; /* Add padding to avoid overlap with the fixed header */
+}
+
+/* Header Section */
+header {
+    position: fixed; /* Makes the header stick to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a slight shadow for separation */
+    z-index: 10;
+    background-color: #b6dbf2; /* Matches the gradient sky color */
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #d41c0b; /* Mario red */
+}
+
+header p {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px; /* Ensures the content starts below the fixed header */
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* This allows the buttons to wrap to the next line */
+    justify-content: center; /* Centers the buttons */
+    gap: 20px; /* Adds space between buttons */
+    margin-top: 40px;
+    width: 80%; /* Limits the container width */
+    max-width: 600px; /* Optionally limit the width */
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #d41c0b; /* Mario red */
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 4px 4px #333;
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex: 0 0 45%; /* Makes buttons take up 45% of the container width */
+    max-width: 280px; /* Ensures buttons do not exceed this width */
+    background-size: 50px; /* Adjusts the size of the image */
+    background-position: center left; /* Position the image to the left of the text */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    padding-left: 60px; /* Adds space for the image */
+}
+
+/* Specific Button with Mario Image */
+.button.mario {
+    background-image: url('HomeAssets/mario.png'); /* Path to Mario image */
+}
+
+/* Specific Button with Princess Peach Image */
+.button.peach {
+    background-image: url('HomeAssets/princesspeach.png'); /* Path to Princess Peach image */
+}
+
+/*Make screen buttons here*/
+/*
+.button.toad {
+    background-image: url('HomeAssets/toad.png'); 
+}
+*/
+
+/* Button Hover Effect */
+.button:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px #222;
+}
+
+/* Footer Styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #38a364; /* Green like the grass in Mario games */
+    text-align: center;
+    padding: 20px 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer Text */
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgb(255, 255, 255); /* White text */
+}
+
