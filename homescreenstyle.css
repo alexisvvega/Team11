@@ -85,7 +85,7 @@ header p {
 
 /* Specific Button with Mario Image */
 .button.mario {
-    background-image: url('HomeAssets/mario.png'); /* Path to Mario image */
+    background-image: url('HomeAssets/mario1.png'); /* Path to Mario image */
 }
 
 /* Specific Button with Princess Peach Image */
