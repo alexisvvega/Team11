@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="toad.css">
+    <title>Toad's Hide-and-Seek</title>
+</head>
+<body>
+    <a href="index.html">
+        <button id="back">Back</button>
+    </a>
+
+    <div class="header">
+        <h1>Toad's Hide-and-Seek</h1>
+        <h3>Can you find all the Toads before the time runs out?</h3> 
+    </div>
+
+    <div id="startScreen" class="screen active">
+        <img id="lrgpic" src="toad.png">
+        <br><br>
+        <button id="start" onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="gameScreen" class="screen">
+        <img id="gamepic" src="tfive.jpg">
+        <div id="time">
+            <p>Remaining Time: <span id="timerDisplay">00:20</span><br>How many Toads are in the picture above?</p>
+        </div>
+        <form>
+            <input type="text" id="userInput" placeholder="Enter a number"><br><br>
+            <input type="submit" id="submit" value="Submit" onclick="handleSubmit()">
+        </form>
+    </div>
+
+    <div id="resultScreen" class ="screen">
+        <img id="gamepic" src="clappingtoad.jpg">
+        <p id="resultMessage">Congratulations! You've found all the Toads!</p>
+        <button id="again" onclick="restartGame()">Play Again!</button>
+    </div>
+
+    <script src="toad.js"></script>
+</body>
+<footer>
+    <p>Made by: Angeleen &hearts;</p>
+</footer>
+</div>
+</html>
