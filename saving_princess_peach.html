@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save Princess Peach! </title>
+  <link rel="stylesheet" href="princess_peach_style.css">
+</head>
+<body>
+  <!-- Back Arrow Button -->
+  <div id="back-button-container">
+    <a href="index.html" id="back-button" title="Go Back">
+      ← Back
+    </a>
+  </div>
+  <!-- Title and Instructions Section -->
+  <div id="title-section">
+    <h1>Save Princess Peach!</h1>
+    <p id="instructions">
+      Oh no! Bowzer has kidnapped Princess Peach and left her at the end of this maze! Your goal is to navigate around the colorful walls and reach her as quickly as you can!
+      <br><br>
+      Use the arrow keys on your keyboard to move the player:
+      <ul>
+        <li>Arrow Up: Move Up</li>
+        <li>Arrow Down: Move Down</li>
+        <li>Arrow Left: Move Left</li>
+        <li>Arrow Right: Move Right</li>
+      </ul>
+    </p>
+  </div>
+
+  <!-- Game Container -->
+  <div id="game-container">
+    <div id="maze"></div>
+    <div id="player"></div>
+    <div id="win-message" class="hidden">You Win!</div>
+    <br/>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
