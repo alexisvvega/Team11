@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./music-rec-styles.css">
 </head>
 <body>
-    <!-- A div for light effects (will be styled in CSS) -->
-    <div class="light"></div>
     
     <!-- A back button to navigate to the previous page -->
     <a class="back-button" href="../index.html">back!</a>
@@ -28,6 +26,9 @@
         <button class="name-button" data-genre="karienme" data-bgcolor="white">karienme</button>
         <button class="name-button" data-genre="emma" data-bgcolor="white">emma</button>
     </div>
+
+    <!-- Embedded Spotify playlist that will update based on user's selection -->
+    <iframe id="playlist" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
     <!-- Link to the external JavaScript file for handling user interaction -->
     <script src="./musicRecScript.js"></script>
