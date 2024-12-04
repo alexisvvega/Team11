@@ -98,6 +98,11 @@ header p {
     background-image: url('HomeAssets/toad.png'); /* Path to Princess Peach image */
 }
 
+/* Specific Button with Toad Image */
+.button.yoshi {
+    background-image: url('HomeAssets/yoshi.png'); /* Path to Princess Peach image */
+}
+
 /*Make screen buttons here*/
 /*
 .button.toad {
