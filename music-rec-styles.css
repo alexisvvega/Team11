@@ -9,7 +9,7 @@ body {
 
 /* Styling for the main heading (h1) */
 h1 {
-    color: white; /* Set the text color to white */
+    color: black; /* Set the text color to black */
     text-align: center; /* Center the text */
     font-size: 2em; /* Set the font size */
     margin: 0; /* Remove default margin */
@@ -18,7 +18,7 @@ h1 {
 
 /* Styling for the paragraph text (p) */
 p {
-    color: white; /* Set the text color to white */
+    color: black; /* Set the text color to black */
     text-align: center; /* Center the text */
     font-size: 1.5em; /* Set the font size */
     margin: 0; /* Remove default margin */
@@ -31,8 +31,8 @@ p {
     top: 2em; /* Position the button 2em from the top of the page */
     left: 2em; /* Position the button 2em from the left of the page */
     padding: 4px 10px; /* Add padding inside the button for spacing */
-    background-color: #ffffff; /* Set the button background color to white*/
-    color: black; /* Set the text color to white */
+    background-color: rgb(190, 219, 171); /* Set the button background color to green*/
+    color: black; /* Set the text color to black */
     border: none; /* Remove any border from the button */
     border-radius: 5px; /* Round the corners of the button */
     font-size: 16px; /* Set the font size */
@@ -41,7 +41,14 @@ p {
 
 /* Add a hover effect to the "Back" button to change the background color when the user hovers over it */
 .back-button:hover {
-    background-color: ##ebebeb; /* Darken the background color on hover */
+    background-color: rgb(152, 176, 135); /* Darken the background color on hover */
+}
+
+/* Styling for the embedded Spotify playlist (iframe) */
+iframe {
+    margin: 20px; /* Add margin around the iframe */
+    width: 70%; /* Set the iframe width to 70% of the parent element */
+    display: block; /* Display the iframe as a block element */
 }
 
 /* Define the keyframes for the light-shine animation */
