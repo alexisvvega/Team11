@@ -1,0 +1,93 @@
+/* Base styling for the entire body of the page */
+body {
+    font-family: "Courier New", Courier, monospace, sans-serif;
+    background: white;
+    display: flex; /* Use flexbox layout for the body */
+    flex-direction: column; /* Arrange children (elements) in a column */
+    align-items: center; /* Center align elements horizontally */
+}
+
+/* Styling for the main heading (h1) */
+h1 {
+    color: black; /* Set the text color to black */
+    text-align: center; /* Center the text */
+    font-size: 2em; /* Set the font size */
+    margin: 0; /* Remove default margin */
+    margin-top: 2em; /* Add a top margin to give space above the heading */
+}
+
+/* Styling for the paragraph text (p) */
+p {
+    color: black; /* Set the text color to black */
+    text-align: center; /* Center the text */
+    font-size: 1.5em; /* Set the font size */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for the "Back" button that allows users to navigate back to the previous page */
+.back-button {
+    text-decoration: none; /* Remove underline from the link */
+    position: absolute; /* Position the button absolutely relative to the nearest positioned ancestor */
+    top: 2em; /* Position the button 2em from the top of the page */
+    left: 2em; /* Position the button 2em from the left of the page */
+    padding: 4px 10px; /* Add padding inside the button for spacing */
+    background-color: rgb(190, 219, 171); /* Set the button background color to green*/
+    color: black; /* Set the text color to black */
+    border: none; /* Remove any border from the button */
+    border-radius: 5px; /* Round the corners of the button */
+    font-size: 16px; /* Set the font size */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+}
+
+/* Add a hover effect to the "Back" button to change the background color when the user hovers over it */
+.back-button:hover {
+    background-color: rgb(152, 176, 135); /* Darken the background color on hover */
+}
+
+/* Styling for the embedded Spotify playlist (iframe) */
+iframe {
+    margin: 20px; /* Add margin around the iframe */
+    width: 70%; /* Set the iframe width to 70% of the parent element */
+    display: block; /* Display the iframe as a block element */
+}
+
+/* Define the keyframes for the light-shine animation */
+@keyframes light-shine {
+    0% {
+        transform: scale(1) translateX(0) translateY(0); /* Initial scale and position */
+        opacity: 0.5; /* Start with partial opacity */
+    }
+    50% {
+        transform: scale(1.5) translateX(-20px) translateY(-20px); /* Increase size and slightly move position */
+        opacity: 1; /* Make the light fully visible */
+    }
+    100% {
+        transform: scale(1) translateX(0) translateY(0); /* Return to the original size and position */
+        opacity: 0.5; /* Fade back to partial opacity */
+    }
+}
+
+/* Styling for the quiz container that holds the genre buttons */
+.quiz-container {
+    text-align: center; /* Center-align the content inside the container */
+    margin: 20px; /* Add margin around the container */
+}
+
+/* Base styling for all genre buttons */
+.name-button {
+    padding: 10px 20px; /* Add padding inside the buttons */
+    margin: 5px; /* Add margin between the buttons */
+    font-size: 1.2em; /* Set the font size */
+    border: none; /* Remove any border from the buttons */
+    border-radius: 5px; /* Round the corners of the buttons */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the buttons */
+    color: black; /* Set the text color to white (default for most buttons) */
+}
+
+/* Individual styling for each genre button based on the genre */
+/* Each button has a specific background color based on the genre */
+.name-button[data-genre="alexis"] { background-color: rgb(190, 219, 171); }
+.name-button[data-genre="angeleen"] { background-color: rgb(190, 219, 171); }
+.name-button[data-genre="stephanie"] { background-color: rgb(190, 219, 171); } 
+.name-button[data-genre="karienme"] { background-color: rgb(190, 219, 171); }
+.name-button[data-genre="emma"] { background-color: rgb(190, 219, 171); }
