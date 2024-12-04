@@ -25,19 +25,19 @@ document.addEventListener("DOMContentLoaded", function() {
             // Use a switch statement to assign the correct playlist URL based on the selected genre
             switch (name) {
                 case "alexis":
-                    playlistUrl = "https://open.spotify.com/embed/playlist/3sREbslsLCnp15LWg8ilzc?";
+                    playlistUrl = "https://open.spotify.com/embed/playlist/3sREbslsLCnp15LWg8ilzc";
                     break;
                 case "angeleen":
-                    playlistUrl = "https://open.spotify.com/embed/playlist/5WQEttF3gkUFiDj0uXzWwG?"; 
+                    playlistUrl = "https://open.spotify.com/embed/playlist/5WQEttF3gkUFiDj0uXzWwG"; 
                     break;
                 case "stephanie":
-                    playlistUrl = "https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M"; // todays top hits
+                    playlistUrl = "https://open.spotify.com/embed/track/5CnRBMfpnFB5LAJaFGu6ln"; // song name
                     break;
                 case "karienme":
-                    playlistUrl = "https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M"; // today top hits
+                    playlistUrl = "https://open.spotify.com/embed/playlist/37i9dQZF1DX5dpn9ROb26T"; // pop songs
                     break;
                 case "emma":
-                    playlistUrl = "https://open.spotify.com/embed/playlist/3aqRh5Dbqs2wg0SdnjZ16M?"; 
+                    playlistUrl = "https://open.spotify.com/embed/playlist/3aqRh5Dbqs2wg0SdnjZ16M"; 
                     break;
                 default:
                     playlistUrl = "https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M"; // Default playlist if no genre matches
