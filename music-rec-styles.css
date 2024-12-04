@@ -74,13 +74,13 @@ p {
     border: none; /* Remove any border from the buttons */
     border-radius: 5px; /* Round the corners of the buttons */
     cursor: pointer; /* Change the cursor to a pointer when hovering over the buttons */
-    color: white; /* Set the text color to white (default for most buttons) */
+    color: black; /* Set the text color to white (default for most buttons) */
 }
 
 /* Individual styling for each genre button based on the genre */
 /* Each button has a specific background color based on the genre */
-.name-button[data-genre="alexis"] { background-color: rgb(2, 77, 4); }
-.name-button[data-genre="angeleen"] { background-color: rgb(2, 77, 4); }
-.name-button[data-genre="stephanie"] { background-color: rgb(2, 77, 4); } 
-.name-button[data-genre="karienme"] { background-color: rgb(2, 77, 4); }
-.name-button[data-genre="emma"] { background-color: rgb(2, 77, 4); }
+.name-button[data-genre="alexis"] { background-color: rgb(190, 219, 171); }
+.name-button[data-genre="angeleen"] { background-color: rgb(190, 219, 171); }
+.name-button[data-genre="stephanie"] { background-color: rgb(190, 219, 171); } 
+.name-button[data-genre="karienme"] { background-color: rgb(190, 219, 171); }
+.name-button[data-genre="emma"] { background-color: rgb(190, 219, 171); }
