@@ -23,19 +23,39 @@
     <div class="quiz-container">
       <h2>select your character!</h2>
       <!-- Buttons for different names with data attributes for genre and background color -->
-      <button class="name-button" data-genre="alexis" data-bgcolor="white">
+      <button
+        class="name-button"
+        data-playlist="alexis_playlist"
+        data-bgcolor="white"
+      >
         alexis
       </button>
-      <button class="name-button" data-genre="angeleen" data-bgcolor="white">
+      <button
+        class="name-button"
+        data-playlist="angeleen_playlist"
+        data-bgcolor="white"
+      >
         angeleen
       </button>
-      <button class="name-button" data-genre="stephanie" data-bgcolor="white">
+      <button
+        class="name-button"
+        data-playlist="stephanie_playlist"
+        data-bgcolor="white"
+      >
         stephanie
       </button>
-      <button class="name-button" data-genre="karen" data-bgcolor="white">
-        karienme
+      <button
+        class="name-button"
+        data-playlist="karen_playlist"
+        data-bgcolor="white"
+      >
+        karen
       </button>
-      <button class="name-button" data-genre="emma" data-bgcolor="white">
+      <button
+        class="name-button"
+        data-playlist="emma_playlist"
+        data-bgcolor="white"
+      >
         emma
       </button>
     </div>
@@ -43,7 +63,7 @@
     <!-- Embedded Spotify playlist that will update based on user's selection -->
     <iframe
       id="playlist"
-      src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M"
+      src="https://open.spotify.com/embed/playlist/7o37BQqnptuQdS5Caw7aL"
       width="100%"
       height="380"
       frameborder="0"
@@ -52,6 +72,34 @@
     ></iframe>
 
     <!-- Link to the external JavaScript file for handling user interaction -->
-    <script src="./musicRecScript.js"></script>
+    <script>
+      // Define the mapping of each character to their specific playlist URL
+      const playlists = {
+        alexis_playlist:
+          "https://open.spotify.com/embed/playlist/3sREbslsLCnp15LWg8ilzc?si=MNeVhd3YSgGkqgQJNluQEA&pi=u-cxQyOz0kQ06J&nd=1&dlsi=ea088cd930cc4552", // Replace with actual playlist URL
+        angeleen_playlist:
+          "https://open.spotify.com/embed/playlist/5WQEttF3gkUFiDj0uXzWwG?si=0slfXPF-SGqs-Sc8CB4hQA&pi=u-CAPNV-PqS0Ko", // Replace with actual playlist URL
+        stephanie_playlist:
+          "https://open.spotify.com/embed/playlist/37i9dQZF1DXbITWG1ZJKYt", // Replace with actual playlist URL
+        karen_playlist:
+          "https://open.spotify.com/embed/playlist/7o37BQqnptuQdS5Caw7aLn", // Replace with actual playlist URL
+        emma_playlist:
+          "https://open.spotify.com/embed/playlist/7aqfs76TWnBbKs6OgPDhW9", // Replace with actual playlist URL
+      };
+
+      // Get all the buttons
+      const buttons = document.querySelectorAll(".name-button");
+
+      // Listen for button clicks
+      buttons.forEach((button) => {
+        button.addEventListener("click", (event) => {
+          const playlistKey = event.target.getAttribute("data-playlist"); // Get the playlist key from data attribute
+          const iframe = document.getElementById("playlist"); // Get the iframe element
+
+          // Update the iframe src to the new playlist URL
+          iframe.src = playlists[playlistKey];
+        });
+      });
+    </script>
   </body>
 </html>
